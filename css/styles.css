@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+nav ul, 
+.inner-footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  padding: 1em;
+}
+
+nav ul li,
+.inner-footer li {
+  display: inline-block;
+
+}
+
+
