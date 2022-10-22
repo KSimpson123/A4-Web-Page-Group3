@@ -61,16 +61,25 @@ nav a {
   font-family: 'Special Elite', cursive;
 }
 
-.content p {
+p {
   margin-top: 1em;
   font-family: 'Special Elite', cursive;
   line-height: 1.7;
 }
 
-.content h2 {
+h2 {
   text-align: center;
   margin-bottom: 1em;
   font-size: 1.8em;
+  text-shadow: #b3a367 1px 0 10px;
+}
+
+.image-caption {
+  font-style: italic;
+  position: absolute;
+  bottom: 5px;
+  right: 14px;
+  color: #fff;
 }
 
 .content {/* Main page content goes in these */
@@ -83,12 +92,31 @@ nav a {
   padding: 3em;
 }
 
+/* Tours Page*/
 
+.tour-content {
+  border: 1px solid #fff;
+  width: 50%;
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
+  margin: 3em 1em;
+  padding: 3em;
+  float: left;
+}
+
+.featured-image {
+  width: 42%;
+  margin: 3em 1em;
+  float: right;
+  position: relative;
+}
 /* Footer */
 
 footer {
   height: 180px;
   background-color: #000;
+  clear: both;
 }
 
 footer,
@@ -99,6 +127,8 @@ footer a {
 .inner-footer ul {
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: -75px;
 }
 
 .inner-footer li {
@@ -113,7 +143,8 @@ footer a {
     #wrapper {
       padding: 2em 0;
     }
-    .content {
+    .content,
+    .tour-content {
       width: 95%;
       margin: 1em;
       padding: 1em;
@@ -123,4 +154,24 @@ footer a {
     .title {
       margin-top: .75em;
     }
+}
+
+@media only screen and (max-width: 900px) { /* alters layout on tours page when window is smaller */
+  .tour-content {
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+    width: 95%;
+    margin: 1em;
+    padding: 1em;
+    float: none;
+  }
+  
+  .featured-image {
+    background-color: #000;
+    width: 95%;
+    margin: 1em;
+    float: none;
+  }
 }
