@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  background: url("../images/dark_forest_hero.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+#wrapper {
+  padding: 2em;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+background-color: black;
+width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  padding: 1em;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+/* Typograhpy */
+
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1.5em;
+  text-shadow: #b3a367 1px 0 10px;
+}
+
+nav a {
+  color: rgb(68, 12, 68);
+  text-decoration: none;
+  color: rgb(144 10 144);
+  font-size: 1.8em;
+  text-shadow: #b3a367 1px 0 10px;
+  font-family: 'Special Elite', cursive;
+}
+
+.content p {
+  margin-top: 1em;
+  font-family: 'Special Elite', cursive;
+  line-height: 1.7;
+}
+
+.content h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 1.8em;
+}
+
+.content {/* Main page content goes in these */
+  border: 1px solid #fff;
+  width: 80%;
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
+  margin: 3em auto;
+  padding: 3em;
+}
+
+
+/* Footer */
+
+footer {
+  height: 180px;
+  background-color: #000;
+}
+
+footer,
+footer a {
+  color: #fff;
+}
+
+.inner-footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+
+/* Mobile Media Queries */
+@media only screen and (max-width: 666px) {
+
+    #wrapper {
+      padding: 2em 0;
+    }
+    .content {
+      width: 95%;
+      margin: 1em;
+      padding: 1em;
+      text-align: justify;
+    }
+
+    .title {
+      margin-top: .75em;
+    }
+}
