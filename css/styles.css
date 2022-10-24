@@ -32,14 +32,41 @@ width: 100%;
 }
 
 nav ul {
+  list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   width: auto;
   padding: 1em;
 }
 
-nav ul li {
+nav ul li:not(.dropdown li) {
   display: inline-block;
+}
+
+/* Drop-down Menu */
+
+#hover {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown a {
+  font-size: 1.25em;
+  text-shadow: #b3a367 1px 0 10px;
+}
+
+ul li:hover > ul,
+.dropdown:hover {
+  transition: all 3s ease;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #0d0d0c33;
+  display: block;
 }
 
 /* Typograhpy */
@@ -154,6 +181,14 @@ footer a {
     .title {
       margin-top: .75em;
     }
+    
+     ul li:hover > ul,
+    .dropdown:hover {
+      top: 20px;
+      right: 10px;
+      background: none;
+}
+    
 }
 
 @media only screen and (max-width: 900px) { /* alters layout on tours page when window is smaller */
