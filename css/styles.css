@@ -119,6 +119,15 @@ h2 {
   padding: 3em;
 }
 
+.content-image { /* home page image in bottom div */
+  border: 1px solid #fff;
+  width: 80%;
+  background: center/cover url("../images/BlackDiamondCemeTombstone.jpeg") no-repeat;
+  margin: 3em auto;
+  min-height: 500px;
+  position: relative;
+}
+
 /* Tours Page*/
 
 .tour-content {
@@ -170,12 +179,20 @@ footer a {
     #wrapper {
       padding: 2em 0;
     }
+    
     .content,
     .tour-content {
       width: 95%;
       margin: 1em;
       padding: 1em;
       text-align: justify;
+    }
+    
+     .content-image { /* home page image in bottom div */
+     width: 95%;
+     margin: 1em;
+     padding: 1em;
+     min-height: 380px;
     }
 
     .title {
