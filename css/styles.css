@@ -112,9 +112,8 @@ h2 {
 .content {/* Main page content goes in these */
   border: 1px solid #fff;
   width: 80%;
-  background-color: #000;
+  background-color: rgb(0,0,0, 0.5);
   color: #fff;
-  opacity: .5;
   margin: 3em auto;
   padding: 3em;
 }
@@ -133,9 +132,8 @@ h2 {
 .tour-content {
   border: 1px solid #fff;
   width: 50%;
-  background-color: #000;
+  background-color: rgb(0,0,0, 0.5);
   color: #fff;
-  opacity: .5;
   margin: 3em 1em;
   padding: 3em;
   float: left;
