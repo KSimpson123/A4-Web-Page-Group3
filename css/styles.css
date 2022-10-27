@@ -96,12 +96,24 @@ p {
   opacity: 0.9;
 }
 
+.tour-content p:first-of-type {
+  margin-top: 1.5em;
+}
+
 h2 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: .25em;
   font-size: 1.8em;
   text-shadow: #b3a367 1px 0 10px;
   opacity: 0.9;
+}
+
+.address { 
+  text-align: center;
+  display: block;
+  font-size: 1em;
+  text-shadow: #b3a367 1px 0 10px;
+  font-style: italic;
 }
 
 .image-caption {
